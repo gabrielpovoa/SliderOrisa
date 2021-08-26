@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+::selection {
+    background-color: #FF3000;
+    color: #FFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.bg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    background-color: rgb(82, 82, 82);
+}
+
+.bg-header .logo {
+    margin-left: 1rem;
+}
+
+.bg-header .logo h1 a{
+    font-size: 2.5rem;
+    color: tomato;
+    font-weight: bold;
+    border-radius: .4rem;
+    background-color: #FFF;
+}
+
+.bg-header a span {
+    color: #FFF;
+    border-radius: .4rem;
+    background-color: #b90d0d;
+}
+
+.bg-header .menu {
+    margin-left: 1rem;
+}
+
+.bg-header .menu ul {
+    display: inline-flex;
+
+}
+
+.bg-header .menu ul li {
+    margin: 0 .8rem;
+}
+
+.bg-header .menu a {
+    font-size: 2.3rem;
+    color: #FFF;
+    font-weight: 600;
+    padding: .8rem 1rem;
+    cursor: pointer;
+
+}
+
+.slider {
+    flex: 1;
+    overflow: hidden;
+}
+
+.controle-slides {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controle {
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.slider-largura {
+    height: 100%;
+    display: flex;
+    transition: all .4s ease-in-out;
+}
+
+.slider-item {
+    width: 100vw;
+    height: inherit;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FF3000;
+}
+
+.chamado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.chamado h1 {
+    font-size: 6rem;
+    color: #FFF;
+    text-shadow: 2px .8px 1px #000;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+}
+
+.chamado p {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    text-align: center;
+    color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%
+    }
+    .bg-header .menu a {
+        font-size: 2.3rem ;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%
+    }
+
+    .bg-header .menu a {
+        font-size: 1.8rem;
+    }
+    .chamado h1  {
+        font-size: 5.4rem;
+    }
+}
